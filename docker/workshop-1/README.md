@@ -92,7 +92,7 @@ sudo systemctl enable --now snapd
    sudo systemctl enable --now docker
    sudo systemctl status docker
    ```
-![Image](./ANNEXES/Pasted%20image%2020250226220514.png)
+![Image](ANNEXES/Pasted%20image%2020250226220514.png)
 
 1. **Allow running Docker without `sudo`:**
    ```bash
@@ -109,7 +109,7 @@ To do this, use the following command:
 ```
 docker run hello-world
 ```
-![Image](./ANNEXES/Pasted%20image%2020250226222747.png)
+![Image](ANNEXES/Pasted%20image%2020250226222747.png)
 
 ## 2. Modifying the Storage Driver
 
@@ -118,7 +118,7 @@ docker run hello-world
    docker info | grep "Storage Driver"
    ```
    - Output:
-   - ![Image](./ANNEXES/Pasted%20image%2020250226224252.png)
+   - ![Image](ANNEXES/Pasted%20image%2020250226224252.png)
 
 2. **Modify the storage driver to `devicemapper` in the configuration file:**
    ```bash
@@ -139,13 +139,13 @@ docker run hello-world
    docker info | grep "Storage Driver"
    ```
    - Output:
-   - ![Image](./ANNEXES/Pasted%20image%2020250226224315.png)
+   - ![Image](ANNEXES/Pasted%20image%2020250226224315.png)
 
 5. **Run a test container:**
    ```bash
    docker run hello-world
    ```
-   ![Image](./ANNEXES/Pasted%20image%2020250226224438.png)
+   ![Image](ANNEXES/Pasted%20image%2020250226224438.png)
 
 6. **Revert the storage driver back to `overlay2`:**
    ```bash
@@ -162,7 +162,7 @@ docker run hello-world
    sudo systemctl restart docker
    docker info | grep "Storage Driver"
    ```
-   ![Image](./ANNEXES/Pasted%20image%2020250226224508.png)
+   ![Image](ANNEXES/Pasted%20image%2020250226224508.png)
 
 ## 3. Running and Configuring Nginx
 
@@ -170,7 +170,7 @@ docker run hello-world
    ```bash
    docker run --rm nginx:1.18.0
    ```
-   ![Image](./ANNEXES/Pasted%20image%2020250226224610.png)
+   ![Image](ANNEXES/Pasted%20image%2020250226224610.png)
 
 2. **Run Nginx in detached mode:**
    ```bash
@@ -180,7 +180,7 @@ docker run hello-world
    ```bash
    docker ps
    ```
-   ![Image](./ANNEXES/Pasted%20image%2020250226224656.png)
+   ![Image](ANNEXES/Pasted%20image%2020250226224656.png)
 
 4. **Configure Nginx with specific settings:**
    ```bash
@@ -195,7 +195,7 @@ docker run hello-world
    ```bash
    docker ps
    ```
-   ![Image](./ANNEXES/Pasted%20image%2020250226224725.png)
+   ![Image](ANNEXES/Pasted%20image%2020250226224725.png)
 
 ## 3. Changing the Logging Driver
 
@@ -204,7 +204,7 @@ docker run hello-world
    docker info | grep "Logging Driver"
    ```
    - Output:
-   - ![Image](./ANNEXES/Pasted%20image%2020250226224742.png)
+   - ![Image](ANNEXES/Pasted%20image%2020250226224742.png)
 
 2. **Modify the logging driver to `journald` in the configuration file:**
    ```bash
@@ -222,12 +222,12 @@ docker run hello-world
    docker info | grep "Logging Driver"
    ```
    - Output:
-   - ![Image](./ANNEXES/Pasted%20image%2020250226224806.png)
+   - ![Image](ANNEXES/Pasted%20image%2020250226224806.png)
 
 4. **Retrieve the logs after changing the logging driver:**
     ```
     journalctl -u docker --no-pager | tail -n 50
     ```
-   ![Image](./ANNEXES/Pasted%20image%2020250226225857.png)
+   ![Image](ANNEXES/Pasted%20image%2020250226225857.png)
 
 With these steps completed, the workshop tasks were successfully executed, and Docker is configured according to the specified requirements.
