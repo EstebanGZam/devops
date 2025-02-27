@@ -1,8 +1,10 @@
+## Docker Workshop 1
+
 1. Review remaining aspects of the Lab on Chapter 1
 
 [https://github.com/PacktPublishing/Docker-for-Developers-Handbook](https://github.com/PacktPublishing/Docker-for-Developers-Handbook)
 
-1. Complete the following steps
+2. Complete the following steps
 
 - Run a hello world container
 - Modify the storage driver. The default storage driver is overlay2. Let’s change it to devicemapper if we had to. Tip: modify the /etc/docker/daemon.json
@@ -12,5 +14,5 @@
 - Configure the Nginx to be named ngnix18, restart on failures and map the por 443 to the 80 on the container. Also, have 250M reserved and use an 18 version of Ngnix.
 - Check the loggin drivers and change it to journald
 
-1. Review examples and follow the Lab on Chapter 2  
+3. Review examples and follow the Lab on Chapter 2  
    [https://github.com/PacktPublishing/Docker-for-Developers-Handbook](https://github.com/PacktPublishing/Docker-for-Developers-Handbook)
