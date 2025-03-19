@@ -14,7 +14,9 @@ the infrastructure on Azure and validate its correct operation are presented.
 
 This first part of the exercise was carried out based on the repository available at the following URL:
 `https://github.com/ChristianFlor/azfunction-tf.git`.
-The implementation is based on a set of Terraform files that define the resources in Azure. An educational Azure
+
+The implementation is based on a set of Terraform files that define the resources in Azure (can be found in the
+`azfunction-tf` folder). An educational Azure
 subscription will be used, so it is necessary to define the subscription key in a `terraform.tfvars` file (This key is
 obtained through the command `az account show`).
 
@@ -213,10 +215,10 @@ security group, and associating the security group with the network interface.
 
 ### Project Description
 
-This implementation follows a Terraform-based approach for provisioning a Linux virtual machine in Azure. The
-configuration includes essential resources such as a virtual network, subnet, network interface, and the virtual machine
-itself. Additionally, networking components like a public IP address and a network security group with SSH access rules
-are integrated to ensure proper connectivity and security.
+This implementation follows a Terraform-based approach for provisioning a Linux virtual machine in Azure (it can
+be found in the `myfirstvm-tf` folder). The configuration includes essential resources such as a virtual network,
+subnet, network interface, and the virtual machine itself. Additionally, networking components like a public IP address
+and a network security group with SSH access rules are integrated to ensure proper connectivity and security.
 
 ### Files and Configuration
 
