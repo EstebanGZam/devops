@@ -1,5 +1,7 @@
 # Implementation Guide with Terraform on Azure
 
+---
+
 ## Part 1: Deploying an Azure Function
 
 ### Objective
@@ -199,8 +201,6 @@ terraform destroy
 ```
 
 ---
-
-# Implementation Guide with Terraform on Azure
 
 ## Part 2: Deploying a Linux Virtual Machine
 
