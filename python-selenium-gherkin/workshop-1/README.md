@@ -228,6 +228,9 @@ The implemented workflow executes automated tests in a CI/CD environment with th
 6. **Report Upload**
     - Stores the HTML file as a downloadable artifact, **even if tests fail** (`if: always()`).
 
+_Evidence of the pipeline execution and the generated report:_
+![result-of-the-github-action.png](ANNEXES/result-of-the-github-action.png)
+![report.png](ANNEXES/report.png)
 ## **6. Final Project Structure**
 
 ```
