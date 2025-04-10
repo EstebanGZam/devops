@@ -1,0 +1,14 @@
+- name: Create directory for SonarQube
+  file:
+    path: /opt/sonarqube
+    state: directory
+
+- name: Copy docker-compose.yml
+  copy:
+    src: files/docker-compose.yml
+    dest: /opt/sonarqube/docker-compose.yml
+
+- name: Start containers
+  command: docker compose up -d
+  args:
+    chdir: /opt/sonarqube
