@@ -1,8 +1,3 @@
----
-created: 2025-05-21
-tags:
----
-
 # Apache JMeter Performance Testing Laboratory Guide
 
 ## Introduction

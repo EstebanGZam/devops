@@ -1,8 +1,3 @@
----
-created: 2025-07-29
-tags:
----
-
 # Blue-Green Deployment Strategy Laboratory Documentation
 
 ## Overview
